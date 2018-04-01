@@ -39,4 +39,11 @@ app.get('/', function(request, response) {
     response.end();
 });
 
+app.post('/', function(request, response){
+    console.log('base POST request');
+
+    response.write('ok');
+    response.end();
+});
+
 app.listen(3000);
